@@ -42,8 +42,12 @@
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		/* background-color:#000000;*/
 		/* color:#FFFFFF;*/
+		/*
 		background-color: var(--navy);
 		color:var(--accent-pale);
+		*/
+		background-color: var(--accent-pale);
+		color:var(--navy);
 		border-top-style: solid;
 		border-top-color: black;
 		border-top-width: 2px;
@@ -66,7 +70,7 @@
 </head>
 <body><div id="pdfFlag" class="cornerflag"><a href="JMeisenhelder-WEB.pdf">View this as Adobe PDF file</a></div>
 {{ content }}
-<div class="footer">&copy;{{ site.time | date: '%y' }} Jeff Meisenhelder - all rights reserved. <a href="mailto:resume@jeffmeisenhelder.com" target="_blank" class="footerlink">Contact</a></div>
+<div class="footer">&copy;{{ site.time | date: '%Y' }} Jeff Meisenhelder - all rights reserved. <a href="mailto:resume@jeffmeisenhelder.com" target="_blank" class="footerlink">Contact</a></div>
 </body>
 </html>
 
