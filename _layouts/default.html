@@ -27,7 +27,7 @@
 	}
 	div.footer {
 		clear:both;
-		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		/* background-color:#000000;*/
 		/* color:#FFFFFF;*/
 		background-color: var(--navy);
@@ -54,7 +54,7 @@
 </head>
 <body><div id="pdfFlag" class="cornerflag"><a href="JMeisenhelder-WEB.pdf">View this as Adobe PDF file</a></div>
 {{ content }}
-<div class="footer">&copy;{{ page.date | date: "%Y" }} Jeff Meisenhelder - all rights reserved. <a href="mailto:resume@jeffmeisenhelder.com" target="_blank" class="footerlink">Contact</a></div>
+<div class="footer">&copy;{{ default.date | date: "%Y" }} Jeff Meisenhelder - all rights reserved. <a href="mailto:resume@jeffmeisenhelder.com" target="_blank" class="footerlink">Contact</a></div>
 </body>
 </html>
 
