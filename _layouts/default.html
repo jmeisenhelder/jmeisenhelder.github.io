@@ -25,6 +25,18 @@
 		line-height: 1.55;
 		color: var(--text);
 	}
+	a:is(:link, :visited, :active, :hover) {
+		color: var(--navy-soft);
+	}
+ 	a:hover {
+		font-weight:bold;
+	}
+	a.footerlink:is(:link, :visited, :active, :hover) {
+		color: var(--accent);
+	}
+	a.footerlink:hover {
+		font-weight:bold;
+	}
 	div.footer {
 		clear:both;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -54,7 +66,7 @@
 </head>
 <body><div id="pdfFlag" class="cornerflag"><a href="JMeisenhelder-WEB.pdf">View this as Adobe PDF file</a></div>
 {{ content }}
-<div class="footer">&copy;{{ default.date | date: "%Y" }} Jeff Meisenhelder - all rights reserved. <a href="mailto:resume@jeffmeisenhelder.com" target="_blank" class="footerlink">Contact</a></div>
+<div class="footer">&copy;{{ site.time | date: '%y' }} Jeff Meisenhelder - all rights reserved. <a href="mailto:resume@jeffmeisenhelder.com" target="_blank" class="footerlink">Contact</a></div>
 </body>
 </html>
 
